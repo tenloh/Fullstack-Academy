@@ -1,1 +1,1 @@
-# Fullstack-Academy-foundations
+# Fullstack Academy assignments.
