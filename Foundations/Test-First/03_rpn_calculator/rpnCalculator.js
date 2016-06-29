@@ -37,7 +37,7 @@ RPNCalculator.prototype.divide = function(){
         var result = operand2 / operand1;
         this.stack.push(result);
     }
-}
+};
 
 RPNCalculator.prototype.times = function(){
     if (this.stack.length < 2){
@@ -48,7 +48,7 @@ RPNCalculator.prototype.times = function(){
         var result = operand2 * operand1;
         this.stack.push(result);
     }
-}
+};
 
 RPNCalculator.prototype.value = function(){
     return this.stack[this.stack.length-1];
