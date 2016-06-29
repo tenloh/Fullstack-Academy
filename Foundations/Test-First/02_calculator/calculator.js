@@ -1,9 +1,9 @@
 createCalculator = function(){
     var calculator = {};
-    var value = 0;
-    calculator.value = function(){return value;};
-    calculator.add = function(num){value += num;};
-    calculator.subtract = function(num){value -= num;};
+    calculator.total = 0;
+    calculator.value = function(){return this.total;};
+    calculator.add = function(num){this.total += num;};
+    calculator.subtract = function(num){this.total -= num;};
     
     return calculator;
 };
