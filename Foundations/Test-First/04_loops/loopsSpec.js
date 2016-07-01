@@ -49,20 +49,6 @@ describe("Looping over nested Loops", function(){
   });
 });
 
-// # #  3x3 [][][]
-//  #       [][][]
-// # #      [][][]
-
-
-// #    2x2 [][]
-//  #       [][]
-
-// # # 
-//
-//
-//
-
-
 describe("More looping over arrays", function() {
 
   // try to implement this join() function without using the built-in String#join function
