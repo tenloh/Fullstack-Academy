@@ -40,3 +40,42 @@ var reduce = function(arr, start, func){
     }
     return current;
 };
+
+var countWordsInReduce = function(current,str){
+    return current + countWords(str);
+};
+
+var sum = function(arr){
+    var func = function(a,b){return a+b};
+    var total = reduce(arr,0,func);
+    return total;
+};
+
+var every = function(arr, func){
+    var num = 0;
+    var everyReduce = function(current, element){
+        if (func(element)){
+            num += 1
+        }; 
+        return num;
+    };
+    
+    if (reduce(arr,0,everyReduce) === arr.length){
+        return true
+    } else {
+        return false;
+    };
+};
+
+var any = function(arr,func){
+    var num = 0;
+    var anyReduce = function(current, element){
+        if (func(element)){num +=1}
+        return num;
+    }
+    if (reduce(arr,0,anyReduce) > 0){
+        return true
+    } else {
+        return false
+    }
+};
