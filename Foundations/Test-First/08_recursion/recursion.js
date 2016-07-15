@@ -8,18 +8,16 @@ var factorialIterative = function(num){
 
 var factorial = function(num){
     if (num===0){
-        return 1
+        return 1;
     }
-   
-    return num * factorial(num-1) 
+    return num * factorial(num-1) ;
 };
 
 var fib = function(num){
     if (num === 0 || num === 1){
-        return 1
+        return 1;
     }
-    
-    return fib(num-1)+fib(num-2)
+    return fib(num-1)+fib(num-2);
 };
 
 var type = function(obj){
@@ -39,10 +37,10 @@ var stringify = function(obj){
     else if (type(obj)==="Object"){
         var resultArr = [];
         for (var prop in obj){
-            var newValue = stringify(obj[prop])
+            var newValue = stringify(obj[prop]);
             resultArr.push(`"${prop}": ${newValue}`);
         }
-       return "{"+ resultArr.join(",") + "}"  
+       return "{"+ resultArr.join(",") + "}"  ;
     }
-    else {return `${obj}`}
+    else {return `${obj}`};
 };
