@@ -13,7 +13,6 @@ var dotCall = function(obj, prop){
     };
     
     var args = Array.prototype.slice.call(arguments);
-    var result = dot.apply(obj, args)
+    var result = val.apply(obj, args.slice(2,args.length));
     return result;
-    
 };
